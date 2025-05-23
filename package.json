@@ -5,17 +5,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "test:run": "npx vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.15.21",
     "typescript": "^5.5.3",
-    "vitest": "^1.6.0"
+    "vitest": "^3.1.4"
   },
   "dependencies": {
-    "@types/node": "^20.14.10",
     "prettier": "^3.3.2"
   }
 }
