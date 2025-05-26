@@ -35,6 +35,7 @@ class RomanNumeral {
 
   to(value: number): string {
     if (value === 1) return "I";
+    if (value === 4) return "IV";
     return "";
   }
 }
@@ -88,5 +89,9 @@ describe('RomanNumeral', () => {
   it('should return I for 1', () => {
     const rn = new RomanNumeral();
     expect(rn.to(1)).toBe("I");
+  });
+  it('should return IV for 4', () => {
+    const rn = new RomanNumeral();
+    expect(rn.to(4)).toBe("IV");
   });
 });
