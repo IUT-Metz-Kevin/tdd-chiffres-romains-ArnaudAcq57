@@ -52,4 +52,8 @@ describe('RomanNumeral', () => {
     const rn = new RomanNumeral();
     expect(rn.of('L')).toBe(50);
   });
+  it('should return 100 for C', () => {
+    const rn = new RomanNumeral();
+    expect(rn.of('C')).toBe(100);
+  });
 });
