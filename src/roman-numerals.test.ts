@@ -72,4 +72,8 @@ describe('RomanNumeral', () => {
     const rn = new RomanNumeral();
     expect(rn.of('IX')).toBe(9);
   });
+  it('should return 6 for VI', () => {
+    const rn = new RomanNumeral();
+    expect(rn.of('VI')).toBe(6);
+  });
 });
