@@ -34,4 +34,10 @@ class RomanNumeral {
   }
 }
 
-//Write your tests here
+// Write your tests here
+describe('RomanNumeral', () => {
+  it('should return 1 for I', () => {
+    const rn = new RomanNumeral();
+    expect(rn.of('I')).toBe(1);
+  });
+});
