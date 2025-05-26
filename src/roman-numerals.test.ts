@@ -64,4 +64,8 @@ describe('RomanNumeral', () => {
     const rn = new RomanNumeral();
     expect(rn.of('M')).toBe(1000);
   });
+  it('should return 4 for IV', () => {
+    const rn = new RomanNumeral();
+    expect(rn.of('IV')).toBe(4);
+  });
 });
