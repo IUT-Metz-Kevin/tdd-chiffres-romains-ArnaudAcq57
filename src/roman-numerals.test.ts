@@ -32,6 +32,11 @@ class RomanNumeral {
     if (value === 'M') return 1000;
     return 0;
   }
+
+  to(value: number): string {
+    if (value === 1) return "I";
+    return "";
+  }
 }
 
 // Write your tests here
@@ -79,5 +84,9 @@ describe('RomanNumeral', () => {
   it('should return 15 for XV', () => {
     const rn = new RomanNumeral();
     expect(rn.of('XV')).toBe(15);
+  });
+  it('should return I for 1', () => {
+    const rn = new RomanNumeral();
+    expect(rn.to(1)).toBe("I");
   });
 });
