@@ -4,6 +4,7 @@ class RomanNumeral {
   of(value: string): number {
     if (value === 'I') return 1;
     if (value === 'V') return 5;
+    if (value === 'X') return 10;
     return 0;
   }
 }
