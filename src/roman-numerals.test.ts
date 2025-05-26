@@ -5,6 +5,7 @@ class RomanNumeral {
     if (value === 'I') return 1;
     if (value === 'V') return 5;
     if (value === 'X') return 10;
+    if (value === 'L') return 50;
     return 0;
   }
 }
