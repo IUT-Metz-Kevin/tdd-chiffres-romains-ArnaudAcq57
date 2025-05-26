@@ -37,6 +37,7 @@ class RomanNumeral {
     if (value === 1) return "I";
     if (value === 4) return "IV";
     if (value === 5) return "V";
+    if (value === 9) return "IX";
     return "";
   }
 }
@@ -98,5 +99,9 @@ describe('RomanNumeral', () => {
   it('should return V for 5', () => {
     const rn = new RomanNumeral();
     expect(rn.to(5)).toBe("V");
+  });
+  it('should return IX for 9', () => {
+    const rn = new RomanNumeral();
+    expect(rn.to(9)).toBe("IX");
   });
 });
