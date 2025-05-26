@@ -35,8 +35,13 @@ class RomanNumeral {
 
   to(value: number): string {
     if (value === 1) return "I";
+    if (value === 2) return "II";
+    if (value === 3) return "III";
     if (value === 4) return "IV";
     if (value === 5) return "V";
+    if (value === 6) return "VI";
+    if (value === 7) return "VII";
+    if (value === 8) return "VIII";
     if (value === 9) return "IX";
     if (value === 10) return "X";
     return "";
@@ -93,6 +98,10 @@ describe('RomanNumeral', () => {
     const rn = new RomanNumeral();
     expect(rn.to(1)).toBe("I");
   });
+  it('should return II for 2', () => {
+    const rn = new RomanNumeral();
+    expect(rn.to(2)).toBe("II");
+  });
   it('should return IV for 4', () => {
     const rn = new RomanNumeral();
     expect(rn.to(4)).toBe("IV");
@@ -100,6 +109,10 @@ describe('RomanNumeral', () => {
   it('should return V for 5', () => {
     const rn = new RomanNumeral();
     expect(rn.to(5)).toBe("V");
+  });
+  it('should return VI for 6', () => {
+    const rn = new RomanNumeral();
+    expect(rn.to(6)).toBe("VI");
   });
   it('should return IX for 9', () => {
     const rn = new RomanNumeral();
