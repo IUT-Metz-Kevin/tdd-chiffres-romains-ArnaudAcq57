@@ -8,6 +8,7 @@ class RomanNumeral {
     if (value === 'L') return 50;
     if (value === 'C') return 100;
     if (value === 'D') return 500;
+    if (value === 'M') return 1000;
     return 0;
   }
 }
